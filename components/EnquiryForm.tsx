@@ -14,6 +14,7 @@ import {
 import { Button } from "./ui/button";
 import { Field, FieldLabel, FieldDescription, FieldError } from "./ui/field";
 import { cn } from "../lib/utils";
+import { BRAND_COLOR } from "../config/brand";
 
 const enquirySchema = z.object({
   fullName: z.string().min(2, "Full Name is required"),
@@ -45,7 +46,8 @@ export function EnquiryForm() {
   return (
     <form
       onSubmit={form.handleSubmit(onSubmit)}
-      className="space-y-6 max-w-xl mx-auto p-6 rounded-2xl shadow-lg bg-white/5"
+      className="space-y-6 max-w-xl mx-auto p-6 rounded-2xl bg-white/5"
+      style={{ boxShadow: `0 4px 32px 0 ${BRAND_COLOR}33` }}
     >
       <Controller
         name="fullName"

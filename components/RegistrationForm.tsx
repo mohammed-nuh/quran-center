@@ -2,6 +2,7 @@
 import * as z from "zod";
 import { useForm, Controller } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { BRAND_COLOR } from "../config/brand";
 import { Input } from "./ui/input";
 import {
   Select,
@@ -48,7 +49,8 @@ export function RegistrationForm() {
   return (
     <form
       onSubmit={form.handleSubmit(onSubmit)}
-      className="space-y-6 max-w-xl mx-auto p-6 rounded-2xl shadow-lg bg-white/5"
+      className="space-y-6 max-w-xl mx-auto p-6 rounded-2xl bg-white/5"
+      style={{ boxShadow: `0 4px 32px 0 ${BRAND_COLOR}33` }}
     >
       <Controller
         name="fullName"

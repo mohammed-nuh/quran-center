@@ -80,7 +80,7 @@ export default function Home() {
       </section>
       {/* Footer */}
       <footer
-        style={{ background: DARK_BG_COLOR, color: BRAND_COLOR }}
+        style={{ background: DARK_BG_COLOR, color: "white" }}
         className="w-full text-center py-3 text-sm font-semibold"
       >
         © {new Date().getFullYear()} Quran Center. All rights reserved.
