@@ -21,33 +21,32 @@ import { BG_COLOR1, BRAND_COLOR, COLOR2 } from "../config/brand";
 const Skiper49 = () => {
   const images = [
     {
-      src: "/courses/course1.png",
+      src: "/courses_3/course1.png",
       alt: "course-1",
     },
     {
-      src: "/courses/course2.png",
+      src: "/courses_3/course2.png",
       alt: "course-2",
     },
     {
-      src: "/courses/course3.png",
+      src: "/courses_3/course3.png",
       alt: "course-3",
     },
     {
-      src: "/courses/course4.png",
+      src: "/courses_3/course4.png",
       alt: "course-4",
     },
     {
-      src: "/courses/course5.png",
-      alt: "course-4",
+      src: "/courses_3/course5.png",
+      alt: "course-5",
     },
   ];
 
   return (
     <div className="w-full py-12 flex flex-col items-center justify-center overflow-hidden bg-white">
       <h2
-        className="text-4xl md:text-5xl font-extrabold tracking-widest text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+        className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
         style={{
-          fontFamily: "TuskerGrotesk, sans-serif",
           background: BG_COLOR1,
           display: "inline-block",
         }}
@@ -56,7 +55,7 @@ const Skiper49 = () => {
         <span style={{ color: "#fff", background: "transparent" }}>OUR </span>
         <span
           style={{
-            color: BRAND_COLOR,
+            color: COLOR2,
             borderRadius: "0.25em",
           }}
         >

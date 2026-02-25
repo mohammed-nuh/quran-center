@@ -44,12 +44,15 @@ export default function WhyChooseUs() {
       }}
     >
       <div
-        className="max-w-5xl w-full rounded-3xl shadow-lg p-8 md:p-12"
+        className="max-w-5xl w-full rounded-3xl shadow-lg p-8 md:p-12 text-center"
         style={{ background: BG_COLOR2, border: `1.5px solid ${BRAND_COLOR}` }}
       >
         <h2
-          className="text-3xl md:text-4xl font-bold mb-10 text-center"
-          style={{ color: BRAND_COLOR }}
+          className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+          style={{
+            display: "inline-block",
+            color: "#fff",
+          }}
         >
           Why Choose Us
         </h2>

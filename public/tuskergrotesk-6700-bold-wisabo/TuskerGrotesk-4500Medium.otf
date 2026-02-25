@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Tusker Grotesk';
+  src: url('/tuskergrotesk-6700-bold-wisabo/TuskerGrotesk-4500Medium.otf') format('opentype');
+  font-weight: 450;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Tusker Grotesk', sans-serif;
+}

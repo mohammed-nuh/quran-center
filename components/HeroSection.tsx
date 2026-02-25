@@ -422,7 +422,7 @@ export default function HeroSection() {
         </div>
       </nav>
       {/* Hero Content */}
-      <div className="flex flex-row items-center justify-between w-full max-w-6xl mx-auto px-6 md:px-16 pt-3 md:pt-6 gap-8 md:gap-12 flex-1 md:flex-row flex-col scroll-smooth">
+      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto px-6 md:px-16 pt-10 md:pt-6 gap-8 md:gap-12 flex-1 scroll-smooth relative pb-[300px] md:pb-0">
         {/* Text Content */}
         <div className="flex-1 flex flex-col items-start md:items-start justify-center z-10 text-left md:text-left w-full">
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">
@@ -430,7 +430,6 @@ export default function HeroSection() {
             <span
               style={{
                 color: BRAND_COLOR,
-                fontFamily: "TuskerGrotesk, sans-serif",
               }}
             >
               Quran Center
@@ -447,22 +446,25 @@ export default function HeroSection() {
             <a
               href="#"
               className="text-black font-bold px-8 py-3 rounded-full shadow transition text-base min-h-[44px] text-center w-full md:w-auto"
-              style={{ backgroundColor: BRAND_COLOR }}
+              style={{ backgroundColor: COLOR2 }}
             >
               Join Now
             </a>
             <a
               href="#"
               className="bg-white/10 font-bold px-8 py-3 rounded-full shadow transition text-base min-h-[44px] text-center w-full md:w-auto"
-              style={{ borderColor: BRAND_COLOR, color: BRAND_COLOR }}
+              style={{ borderColor: BRAND_COLOR, color: COLOR2 }}
             >
               Explore Courses
             </a>
           </div>
         </div>
-        {/* Boy Image */}
-        <div className="flex-1 flex items-end justify-end md:items-end md:justify-end w-full md:w-auto relative z-0 mt-8 md:mt-0">
-          <div className="relative md:right-[-40px] md:top-5 drop-shadow-2xl">
+        {/* Boy Image - absolutely positioned at bottom center on mobile, static on md+ */}
+        <div
+          className="w-full md:w-auto absolute md:static left-1/2 md:left-auto bottom-0 md:bottom-auto flex justify-center md:justify-end items-end z-0 mt-8 md:mt-0"
+          style={{ transform: "translateX(-50%)", minHeight: 0 }}
+        >
+          <div className="relative md:right-[-45%] md:top-5 drop-shadow-2xl">
             <Image
               src="/boy_holding_quran.png"
               alt="Boy holding Quran"
