@@ -20,7 +20,7 @@ export default function AboutUs() {
         style={{ background: BG_COLOR1, border: `1.5px solid ${BRAND_COLOR}` }}
       >
         <h2
-          className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+          className="text-2xl md:text-3xl font-semibold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
           style={{
             display: "inline-block",
             color: "#fff",

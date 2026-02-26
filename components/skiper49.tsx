@@ -45,21 +45,27 @@ const Skiper49 = () => {
   return (
     <div className="w-full py-12 flex flex-col items-center justify-center overflow-hidden bg-white">
       <h2
-        className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+        className="text-2xl md:text-3xl font-semibold text-center rounded-3xl px-6 py-4 shadow-lg mb-10 flex items-center gap-3"
         style={{
           background: BG_COLOR1,
           display: "inline-block",
         }}
       >
-        <BookIcon size={40} style={{ color: COLOR2 }} className="inline-block mr-3" />
-        <span style={{ color: "#fff", background: "transparent" }}>OUR </span>
+        <img
+          src="/quran.png"
+          alt="Quran Logo"
+          width={40}
+          height={40}
+          className="inline-block mr-3"
+        />
+        <span style={{ color: "#fff", background: "transparent" }}>Our </span>
         <span
           style={{
             color: COLOR2,
             borderRadius: "0.25em",
           }}
         >
-          COURSES
+          Courses
         </span>
       </h2>
       <Carousel_003 className="w-full" images={images} showPagination loop />

@@ -21,7 +21,7 @@ export default function Home() {
       </div>
       <section id="register" className="py-16 bg-transparent text-center">
         <h2
-          className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+          className="text-2xl md:text-3xl font-semibold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
           style={{
             background: BG_COLOR1,
             display: "inline-block",
@@ -51,7 +51,7 @@ export default function Home() {
       </div>
       <section id="enquiry" className="py-16 bg-transparent text-center">
         <h2
-          className="text-4xl md:text-5xl font-extrabold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
+          className="text-2xl md:text-3xl font-semibold text-center rounded-3xl px-8 py-4 shadow-lg mb-10 flex items-center gap-3"
           style={{
             background: BG_COLOR1,
             display: "inline-block",
